@@ -17,6 +17,7 @@ public class ReadNumbers {
 
     }
 
+    //Comprueba si un un String introducido en un entero
     public static boolean IsInteger(String text,String message){
         int x;
         try{
@@ -27,8 +28,19 @@ public class ReadNumbers {
             System.out.println(message);
             return false;
         }
-
     }
+
+    //Solicita un número por pantalla, comprueba que sea válido y lo devuelve como entero
+    public static int checkAndGetImputNumbers(Scanner sc){
+        System.out.println("Introduce un número");
+        String numberStr;
+        do{
+            numberStr = sc.nextLine();
+        }
+        while(!ReadNumbers.IsInteger(numberStr,"El número introducido no es válido"));
+        return Integer.parseInt(numberStr);
+    }
+
     public static boolean IsDouble(String text,String message){
         double x;
         try{
