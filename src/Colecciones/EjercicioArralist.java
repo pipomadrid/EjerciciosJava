@@ -1,11 +1,15 @@
 package Colecciones;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class EjercicioArralist {
+    int num=9;
 
     public static void main(String[] args) {
+
         Cliente client = new Cliente("Juan", "Juan@Gmail.com");
         client.addTelephone("6552569956");
         client.addTelephone("2586663312");

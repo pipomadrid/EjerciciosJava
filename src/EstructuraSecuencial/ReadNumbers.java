@@ -41,6 +41,8 @@ public class ReadNumbers {
         return Integer.parseInt(numberStr);
     }
 
+
+
     public static boolean IsDouble(String text,String message){
         double x;
         try{
